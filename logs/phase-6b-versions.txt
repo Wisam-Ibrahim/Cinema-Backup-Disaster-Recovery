@@ -1,0 +1,50 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261125182423
+Username: WIN-MMHGOOM7J3D\wisam
+RunAs User: WIN-MMHGOOM7J3D\wisam
+Configuration Name: 
+Machine: WIN-MMHGOOM7J3D (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 2640
+PSVersion: 5.1.26100.7462
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7462
+BuildVersion: 10.0.26100.7462
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\CinemaRepo\logs\phase-6b-versions.txt
+wbadmin 1.0 - Backup command-line tool
+(C) Copyright Microsoft Corporation. All rights reserved.
+
+Backup time: 11/25/2026 6:04 PM
+Backup target: 1394/USB Disk labeled (E:)
+Version identifier: 11/25/2026-13:04
+Can recover: Volume(s), File(s)
+Snapshot ID: {197fcc62-2da1-43dc-b278-ab7cf3a2e035}
+
+Backup time: 11/25/2026 6:08 PM
+Backup target: 1394/USB Disk labeled (E:)
+Version identifier: 11/25/2026-13:08
+Can recover: Volume(s), File(s)
+Snapshot ID: {e887135f-0e9c-460c-b4ce-da5116711886}
+
+
+Schedule              : {11/25/2026 11:00:00 PM}
+BackupTargets         : {E:}
+VolumesToBackup       : {}
+FilesSpecsToBackup    : {C:\CinemaData\*}
+FilesSpecsToExclude   : {}
+ComponentsToBackup    : {}
+BMR                   : False
+SystemState           : False
+OverwriteOldFormatVhd : False
+VssBackupOptions      : VssCopyBackup
+
+**********************
+Windows PowerShell transcript end
+End time: 20261125182427
+**********************

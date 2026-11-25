@@ -1,0 +1,84 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261125180845
+Username: WIN-MMHGOOM7J3D\wisam
+RunAs User: WIN-MMHGOOM7J3D\wisam
+Configuration Name: 
+Machine: WIN-MMHGOOM7J3D (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 2640
+PSVersion: 5.1.26100.7462
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7462
+BuildVersion: 10.0.26100.7462
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\CinemaRepo\logs\phase-6b-backup-run.txt
+wbadmin 1.0 - Backup command-line tool
+(C) Copyright Microsoft Corporation. All rights reserved.
+
+Retrieving volume information...
+This will back up Windows(C:) (Selected Files) to E:.
+This will overwrite your existing scheduled backup and might cause your existing
+backups to become inaccessible.
+To ensure that you can access your existing backups select a different location
+to store your backups.
+
+The backup operation to E: is starting.
+Creating a shadow copy of the volumes specified for backup...
+Please wait while files to backup for volume Windows(C:) are identified.
+This might take several minutes.
+Creating a shadow copy of the volumes specified for backup...
+Please wait while files to backup for volume Windows(C:) are identified.
+This might take several minutes.
+Scanning the file system...
+Please wait while files to backup for volume Windows(C:) are identified.
+This might take several minutes.
+Found (0) files.
+Scanning the file system...
+Found (0) files.
+Scanning the file system...
+Found (0) files.
+Scanning the file system...
+Found (0) files.
+Scanning the file system...
+Found (0) files.
+Scanning the file system...
+Found (0) files.
+Scanning the file system...
+Found (0) files.
+Scanning the file system...
+Found (0) files.
+Scanning the file system...
+Found (0) files.
+Scanning the file system...
+Found (0) files.
+Scanning the file system...
+Found (0) files.
+Scanning the file system...
+Found (0) files.
+Scanning the file system...
+Found (0) files.
+Scanning the file system...
+Found (0) files.
+Scanning the file system...
+Found (0) files.
+Scanning the file system...
+Found (0) files.
+File identification is complete.
+The backup of volume Windows(C:) to E: is starting...
+The backup of volume Windows(C:) completed successfully.
+Summary of the backup operation:
+------------------
+
+The backup operation successfully completed.
+The backup of volume Windows(C:) completed successfully.
+Log of files successfully backed up:
+C:\WINDOWS\Logs\WindowsServerBackup\Backup-25-11-2026_13-08-51.log
+**********************
+Windows PowerShell transcript end
+End time: 20261125181151
+**********************
