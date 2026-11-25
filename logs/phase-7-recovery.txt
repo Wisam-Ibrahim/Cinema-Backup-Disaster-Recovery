@@ -1,0 +1,56 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261125182539
+Username: WIN-MMHGOOM7J3D\wisam
+RunAs User: WIN-MMHGOOM7J3D\wisam
+Configuration Name: 
+Machine: WIN-MMHGOOM7J3D (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 2640
+PSVersion: 5.1.26100.7462
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7462
+BuildVersion: 10.0.26100.7462
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\CinemaRepo\logs\phase-7-recovery.txt
+--- After deletion (should be empty) ---
+wbadmin 1.0 - Backup command-line tool
+(C) Copyright Microsoft Corporation. All rights reserved.
+
+Retrieving volume information...
+You have chosen to recover the file(s) C:\CinemaData from the
+backup created on 11/25/2026 6:08 PM to C:\.
+Preparing to recover files...
+
+Successfully recovered C:\CinemaData to C:\.
+The recovery operation completed.
+Summary of the recovery operation:
+--------------------
+
+Recovery of C:\CinemaData to C:\ successfully completed.
+Total bytes recovered: 29 bytes
+Total files recovered: 3
+Total files failed: 0
+
+Log of files successfully recovered:
+C:\WINDOWS\Logs\WindowsServerBackup\FileRestore-25-11-2026_13-25-40.log
+--- After recovery ---
+
+
+    Directory: C:\CinemaData
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        11/25/2026   5:41 PM             15 bookings.sql
+-a----        11/25/2026   5:41 PM             14 movies.csv
+cinema bookings
+movie1 , 20:00
+**********************
+Windows PowerShell transcript end
+End time: 20261125182550
+**********************
