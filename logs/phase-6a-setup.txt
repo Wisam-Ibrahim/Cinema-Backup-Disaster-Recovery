@@ -1,0 +1,93 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261125174112
+Username: WIN-MMHGOOM7J3D\wisam
+RunAs User: WIN-MMHGOOM7J3D\wisam
+Configuration Name: 
+Machine: WIN-MMHGOOM7J3D (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 2640
+PSVersion: 5.1.26100.7462
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7462
+BuildVersion: 10.0.26100.7462
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\CinemaRepo\logs\phase-6a-setup.txt
+PS C:\CinemaRepo> .\01-setup-storage-and-data.ps1
+
+
+    Directory: C:\
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        11/25/2026   5:41 PM                CinemaData
+
+
+    Directory: C:\CinemaData
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        11/25/2026   5:41 PM             15 bookings.sql
+-a----        11/25/2026   5:41 PM             14 movies.csv
+
+Success       : True
+RestartNeeded : No
+FeatureResult : {Windows Server Backup}
+ExitCode      : Success
+
+
+ObjectId             : {1}\\WIN-MMHGOOM7J3D\root/Microsoft/Windows/Storage/Providers_v2\WSP_Volume.Obje
+                       ctId="{5752c027-e7bf-11f1-9816-806e6f6e6963}:VO:\\?\Volume{59fafa3e-f5df-4de8-a8
+                       3f-da03cb700710}\"
+PassThroughClass     :
+PassThroughIds       :
+PassThroughNamespace :
+PassThroughServer    :
+UniqueId             : \\?\Volume{59fafa3e-f5df-4de8-a83f-da03cb700710}\
+AllocationUnitSize   : 4096
+DedupMode            : NotAvailable
+DriveLetter          : E
+DriveType            : Fixed
+FileSystem           : NTFS
+FileSystemLabel      :
+FileSystemType       : NTFS
+HealthStatus         : Healthy
+OperationalStatus    : OK
+Path                 : \\?\Volume{59fafa3e-f5df-4de8-a83f-da03cb700710}\
+ReFSDedupMode        : NotAvailable
+Size                 : 21457006592
+SizeRemaining        : 21398806528
+PSComputerName       :
+
+
+
+PS C:\CinemaRepo> Get-Volume -DriveLetter E
+
+DriveLetter FriendlyName FileSystemType DriveType HealthStatus OperationalStatus SizeRemaining     Size
+----------- ------------ -------------- --------- ------------ ----------------- -------------     ----
+E                        NTFS           Fixed     Healthy      OK                     19.93 GB 19.98 GB
+
+
+PS C:\CinemaRepo> dir C:\CinemaData
+
+
+    Directory: C:\CinemaData
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        11/25/2026   5:41 PM             15 bookings.sql
+-a----        11/25/2026   5:41 PM             14 movies.csv
+
+
+PS C:\CinemaRepo> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20261125174300
+**********************
