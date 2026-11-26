@@ -1,0 +1,11 @@
+﻿
+Test Scenario                                                              Result
+---- --------                                                              ------
+T01  Healthy file: FILE_OK, file not modified                              PASS  
+T02  Missing file restored from backup                                     PASS  
+T03  Corrupted file quarantined and restored (SHA-256 verified)            PASS  
+T04  Backup missing, fallback off: no fake file, BACKUP_UNAVAILABLE logged PASS  
+T05  Backup missing, wbadmin fallback restores file (SHA-256 verified)     PASS  
+
+
+

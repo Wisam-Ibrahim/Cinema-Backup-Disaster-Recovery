@@ -2,3 +2,34 @@
 2026-11-26 08:18:36 | INFO | FILE_OK | file=C:\CinemaData\bookings.sql | size=15 | run_id=4e4a980a
 2026-11-26 08:18:36 | INFO | FILE_OK | file=C:\CinemaData\movies.csv | size=14 | run_id=4e4a980a
 2026-11-26 08:18:36 | INFO | CHECK_COMPLETED | ok=2 | healed=0 | failed=0 | run_id=4e4a980a
+2026-11-26 08:19:56 | INFO | CHECK_STARTED | files=2 | run_id=0f2e55d0
+2026-11-26 08:19:56 | INFO | FILE_OK | file=C:\CinemaData\bookings.sql | size=15 | run_id=0f2e55d0
+2026-11-26 08:19:56 | INFO | FILE_OK | file=C:\CinemaData\movies.csv | size=14 | run_id=0f2e55d0
+2026-11-26 08:19:56 | INFO | CHECK_COMPLETED | ok=2 | healed=0 | failed=0 | run_id=0f2e55d0
+2026-11-26 08:19:57 | INFO | CHECK_STARTED | files=2 | run_id=8e580b5b
+2026-11-26 08:19:57 | WARNING | MISSING | file=C:\CinemaData\bookings.sql | run_id=8e580b5b
+2026-11-26 08:19:57 | INFO | RECOVERY_STARTED | file=bookings | source=backup | attempt=1 | run_id=8e580b5b
+2026-11-26 08:19:57 | INFO | RECOVERY_SUCCESS | file=bookings | source=backup | attempt=1 | run_id=8e580b5b
+2026-11-26 08:19:57 | INFO | FILE_OK | file=C:\CinemaData\movies.csv | size=14 | run_id=8e580b5b
+2026-11-26 08:19:57 | INFO | CHECK_COMPLETED | ok=1 | healed=1 | failed=0 | run_id=8e580b5b
+2026-11-26 08:19:57 | INFO | CHECK_STARTED | files=2 | run_id=a851463b
+2026-11-26 08:19:57 | WARNING | SIZE_MISMATCH | file=C:\CinemaData\bookings.sql | expected_size=15 | actual_size=16 | run_id=a851463b
+2026-11-26 08:19:57 | INFO | QUARANTINED | file=C:\CinemaData\bookings.sql | copy=C:\CinemaRepo\quarantine\2026-11-26\bookings.sql_081957.bad | run_id=a851463b
+2026-11-26 08:19:57 | INFO | RECOVERY_STARTED | file=bookings | source=backup | attempt=1 | run_id=a851463b
+2026-11-26 08:19:57 | INFO | RECOVERY_SUCCESS | file=bookings | source=backup | attempt=1 | run_id=a851463b
+2026-11-26 08:19:57 | INFO | FILE_OK | file=C:\CinemaData\movies.csv | size=14 | run_id=a851463b
+2026-11-26 08:19:57 | INFO | CHECK_COMPLETED | ok=1 | healed=1 | failed=0 | run_id=a851463b
+2026-11-26 08:19:58 | INFO | CHECK_STARTED | files=2 | run_id=4f1cd84c
+2026-11-26 08:19:58 | WARNING | MISSING | file=C:\CinemaData\bookings.sql | run_id=4f1cd84c
+2026-11-26 08:19:58 | CRITICAL | BACKUP_UNAVAILABLE | file=bookings | backup=C:\CinemaRepo\backups\bookings.sql | run_id=4f1cd84c
+2026-11-26 08:19:58 | ERROR | RECOVERY_FAILED | file=bookings | target=C:\CinemaData\bookings.sql | run_id=4f1cd84c
+2026-11-26 08:19:58 | ERROR | MANUAL_REVIEW_REQUIRED | file=bookings | run_id=4f1cd84c
+2026-11-26 08:19:58 | INFO | FILE_OK | file=C:\CinemaData\movies.csv | size=14 | run_id=4f1cd84c
+2026-11-26 08:19:58 | INFO | CHECK_COMPLETED | ok=1 | healed=0 | failed=1 | run_id=4f1cd84c
+2026-11-26 08:19:59 | INFO | CHECK_STARTED | files=2 | run_id=c67d9702
+2026-11-26 08:19:59 | WARNING | MISSING | file=C:\CinemaData\bookings.sql | run_id=c67d9702
+2026-11-26 08:19:59 | CRITICAL | BACKUP_UNAVAILABLE | file=bookings | backup=C:\CinemaRepo\backups\bookings.sql | run_id=c67d9702
+2026-11-26 08:19:59 | INFO | WBADMIN_FALLBACK_STARTED | file=bookings | backup_target=E: | run_id=c67d9702
+2026-11-26 08:20:21 | INFO | RECOVERY_SUCCESS | file=bookings | source=wbadmin | version=11/25/2026-18:00 | run_id=c67d9702
+2026-11-26 08:20:21 | INFO | FILE_OK | file=C:\CinemaData\movies.csv | size=14 | run_id=c67d9702
+2026-11-26 08:20:21 | INFO | CHECK_COMPLETED | ok=1 | healed=1 | failed=0 | run_id=c67d9702

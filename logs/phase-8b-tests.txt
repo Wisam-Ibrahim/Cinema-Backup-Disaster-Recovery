@@ -1,0 +1,62 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261126081954
+Username: WIN-MMHGOOM7J3D\wisam
+RunAs User: WIN-MMHGOOM7J3D\wisam
+Configuration Name: 
+Machine: WIN-MMHGOOM7J3D (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 2640
+PSVersion: 5.1.26100.7462
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7462
+BuildVersion: 10.0.26100.7462
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is logs\phase-8b-tests.txt
+
+Test Scenario                                                              Result
+---- --------                                                              ------
+T01  Healthy file: FILE_OK, file not modified                              PASS  
+T02  Missing file restored from backup                                     PASS  
+T03  Corrupted file quarantined and restored (SHA-256 verified)            PASS  
+T04  Backup missing, fallback off: no fake file, BACKUP_UNAVAILABLE logged PASS  
+T05  Backup missing, wbadmin fallback restores file (SHA-256 verified)     PASS
+--- last log lines ---
+2026-11-26 08:19:56 | INFO | FILE_OK | file=C:\CinemaData\bookings.sql | size=15 | run_id=0f2e55d0
+2026-11-26 08:19:56 | INFO | FILE_OK | file=C:\CinemaData\movies.csv | size=14 | run_id=0f2e55d0
+2026-11-26 08:19:56 | INFO | CHECK_COMPLETED | ok=2 | healed=0 | failed=0 | run_id=0f2e55d0
+2026-11-26 08:19:57 | INFO | CHECK_STARTED | files=2 | run_id=8e580b5b
+2026-11-26 08:19:57 | WARNING | MISSING | file=C:\CinemaData\bookings.sql | run_id=8e580b5b
+2026-11-26 08:19:57 | INFO | RECOVERY_STARTED | file=bookings | source=backup | attempt=1 | run_id=8e580b5b
+2026-11-26 08:19:57 | INFO | RECOVERY_SUCCESS | file=bookings | source=backup | attempt=1 | run_id=8e580b5b
+2026-11-26 08:19:57 | INFO | FILE_OK | file=C:\CinemaData\movies.csv | size=14 | run_id=8e580b5b
+2026-11-26 08:19:57 | INFO | CHECK_COMPLETED | ok=1 | healed=1 | failed=0 | run_id=8e580b5b
+2026-11-26 08:19:57 | INFO | CHECK_STARTED | files=2 | run_id=a851463b
+2026-11-26 08:19:57 | WARNING | SIZE_MISMATCH | file=C:\CinemaData\bookings.sql | expected_size=15 | actual_size=16 | run_id=a851463b
+2026-11-26 08:19:57 | INFO | QUARANTINED | file=C:\CinemaData\bookings.sql | copy=C:\CinemaRepo\quarantine\2026-11-26\bookings.sql_081957.bad | run_id=a851463b
+2026-11-26 08:19:57 | INFO | RECOVERY_STARTED | file=bookings | source=backup | attempt=1 | run_id=a851463b
+2026-11-26 08:19:57 | INFO | RECOVERY_SUCCESS | file=bookings | source=backup | attempt=1 | run_id=a851463b
+2026-11-26 08:19:57 | INFO | FILE_OK | file=C:\CinemaData\movies.csv | size=14 | run_id=a851463b
+2026-11-26 08:19:57 | INFO | CHECK_COMPLETED | ok=1 | healed=1 | failed=0 | run_id=a851463b
+2026-11-26 08:19:58 | INFO | CHECK_STARTED | files=2 | run_id=4f1cd84c
+2026-11-26 08:19:58 | WARNING | MISSING | file=C:\CinemaData\bookings.sql | run_id=4f1cd84c
+2026-11-26 08:19:58 | CRITICAL | BACKUP_UNAVAILABLE | file=bookings | backup=C:\CinemaRepo\backups\bookings.sql | run_id=4f1cd84c
+2026-11-26 08:19:58 | ERROR | RECOVERY_FAILED | file=bookings | target=C:\CinemaData\bookings.sql | run_id=4f1cd84c
+2026-11-26 08:19:58 | ERROR | MANUAL_REVIEW_REQUIRED | file=bookings | run_id=4f1cd84c
+2026-11-26 08:19:58 | INFO | FILE_OK | file=C:\CinemaData\movies.csv | size=14 | run_id=4f1cd84c
+2026-11-26 08:19:58 | INFO | CHECK_COMPLETED | ok=1 | healed=0 | failed=1 | run_id=4f1cd84c
+2026-11-26 08:19:59 | INFO | CHECK_STARTED | files=2 | run_id=c67d9702
+2026-11-26 08:19:59 | WARNING | MISSING | file=C:\CinemaData\bookings.sql | run_id=c67d9702
+2026-11-26 08:19:59 | CRITICAL | BACKUP_UNAVAILABLE | file=bookings | backup=C:\CinemaRepo\backups\bookings.sql | run_id=c67d9702
+2026-11-26 08:19:59 | INFO | WBADMIN_FALLBACK_STARTED | file=bookings | backup_target=E: | run_id=c67d9702
+2026-11-26 08:20:21 | INFO | RECOVERY_SUCCESS | file=bookings | source=wbadmin | version=11/25/2026-18:00 | run_id=c67d9702
+2026-11-26 08:20:21 | INFO | FILE_OK | file=C:\CinemaData\movies.csv | size=14 | run_id=c67d9702
+2026-11-26 08:20:21 | INFO | CHECK_COMPLETED | ok=1 | healed=1 | failed=0 | run_id=c67d9702
+**********************
+Windows PowerShell transcript end
+End time: 20261126082021
+**********************
