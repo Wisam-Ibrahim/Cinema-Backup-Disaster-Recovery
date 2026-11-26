@@ -94,3 +94,9 @@
 2026-11-26 09:13:33 | INFO | RECOVERY_STARTED | file=movies | source=backup | attempt=1 | run_id=3e191d36
 2026-11-26 09:13:33 | INFO | RECOVERY_SUCCESS | file=movies | source=backup | attempt=1 | run_id=3e191d36
 2026-11-26 09:13:33 | INFO | CHECK_COMPLETED | ok=1 | healed=1 | failed=0 | run_id=3e191d36
+2026-11-26 09:17:49 | INFO | CHECK_STARTED | files=2 | run_id=5ad96e45
+2026-11-26 09:17:49 | INFO | FILE_OK | file=C:\CinemaData\bookings.sql | size=15 | run_id=5ad96e45
+2026-11-26 09:17:49 | WARNING | MISSING | file=C:\CinemaData\movies.csv | run_id=5ad96e45
+2026-11-26 09:17:49 | INFO | RECOVERY_STARTED | file=movies | source=backup | attempt=1 | run_id=5ad96e45
+2026-11-26 09:17:49 | INFO | RECOVERY_SUCCESS | file=movies | source=backup | attempt=1 | run_id=5ad96e45
+2026-11-26 09:17:49 | INFO | CHECK_COMPLETED | ok=1 | healed=1 | failed=0 | run_id=5ad96e45
