@@ -1,0 +1,81 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261126082100
+Username: WIN-MMHGOOM7J3D\wisam
+RunAs User: WIN-MMHGOOM7J3D\wisam
+Configuration Name: 
+Machine: WIN-MMHGOOM7J3D (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 2640
+PSVersion: 5.1.26100.7462
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7462
+BuildVersion: 10.0.26100.7462
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is logs\phase-8c-task.txt
+
+
+TaskName    : Cinema-SelfHealing-Monitor
+State       : Ready
+Description : Checks monitored Cinema files every 5 minutes and restores them safely.
+
+
+
+
+
+Enabled            : True
+EndBoundary        :
+ExecutionTimeLimit :
+Id                 :
+Repetition         : MSFT_TaskRepetitionPattern
+StartBoundary      :
+Delay              :
+PSComputerName     :
+
+Enabled            : True
+EndBoundary        :
+ExecutionTimeLimit :
+Id                 :
+Repetition         : MSFT_TaskRepetitionPattern
+StartBoundary      : 2026-11-26T08:22:02+05:00
+RandomDelay        :
+PSComputerName     :
+
+
+
+
+
+LastRunTime        : 11/30/1999 12:00:00 AM
+LastTaskResult     : 267011
+NextRunTime        : 11/26/2026 8:22:02 AM
+NumberOfMissedRuns : 0
+TaskName           : Cinema-SelfHealing-Monitor
+TaskPath           :
+PSComputerName     :
+
+LastRunTime        : 11/26/2026 8:21:04 AM
+LastTaskResult     : 0
+NextRunTime        : 11/26/2026 8:22:02 AM
+NumberOfMissedRuns : 0
+TaskName           : Cinema-SelfHealing-Monitor
+TaskPath           :
+PSComputerName     :
+
+2026-11-26 08:19:59 | WARNING | MISSING | file=C:\CinemaData\bookings.sql | run_id=c67d9702
+2026-11-26 08:19:59 | CRITICAL | BACKUP_UNAVAILABLE | file=bookings | backup=C:\CinemaRepo\backups\bookings.sql | run_id=c67d9702
+2026-11-26 08:19:59 | INFO | WBADMIN_FALLBACK_STARTED | file=bookings | backup_target=E: | run_id=c67d9702
+2026-11-26 08:20:21 | INFO | RECOVERY_SUCCESS | file=bookings | source=wbadmin | version=11/25/2026-18:00 | run_id=c67d9702
+2026-11-26 08:20:21 | INFO | FILE_OK | file=C:\CinemaData\movies.csv | size=14 | run_id=c67d9702
+2026-11-26 08:20:21 | INFO | CHECK_COMPLETED | ok=1 | healed=1 | failed=0 | run_id=c67d9702
+2026-11-26 08:21:04 | INFO | CHECK_STARTED | files=2 | run_id=4254842c
+2026-11-26 08:21:05 | INFO | FILE_OK | file=C:\CinemaData\bookings.sql | size=15 | run_id=4254842c
+2026-11-26 08:21:05 | INFO | FILE_OK | file=C:\CinemaData\movies.csv | size=14 | run_id=4254842c
+2026-11-26 08:21:05 | INFO | CHECK_COMPLETED | ok=2 | healed=0 | failed=0 | run_id=4254842c
+**********************
+Windows PowerShell transcript end
+End time: 20261126082124
+**********************
