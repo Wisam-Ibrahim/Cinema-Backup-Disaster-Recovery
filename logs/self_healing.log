@@ -54,3 +54,19 @@
 2026-11-26 08:29:47 | INFO | RECOVERY_SUCCESS | file=bookings | source=backup | attempt=1 | run_id=f3946f20
 2026-11-26 08:29:47 | INFO | FILE_OK | file=C:\CinemaData\movies.csv | size=14 | run_id=f3946f20
 2026-11-26 08:29:47 | INFO | CHECK_COMPLETED | ok=1 | healed=1 | failed=0 | run_id=f3946f20
+2026-11-26 08:32:04 | INFO | CHECK_STARTED | files=2 | run_id=4e3bc527
+2026-11-26 08:32:04 | INFO | FILE_OK | file=C:\CinemaData\bookings.sql | size=15 | run_id=4e3bc527
+2026-11-26 08:32:04 | INFO | FILE_OK | file=C:\CinemaData\movies.csv | size=14 | run_id=4e3bc527
+2026-11-26 08:32:04 | INFO | CHECK_COMPLETED | ok=2 | healed=0 | failed=0 | run_id=4e3bc527
+2026-11-26 08:37:04 | INFO | CHECK_STARTED | files=2 | run_id=fbb3e7b2
+2026-11-26 08:37:04 | INFO | FILE_OK | file=C:\CinemaData\bookings.sql | size=15 | run_id=fbb3e7b2
+2026-11-26 08:37:04 | INFO | FILE_OK | file=C:\CinemaData\movies.csv | size=14 | run_id=fbb3e7b2
+2026-11-26 08:37:04 | INFO | CHECK_COMPLETED | ok=2 | healed=0 | failed=0 | run_id=fbb3e7b2
+2026-11-26 08:42:04 | INFO | CHECK_STARTED | files=2 | run_id=a56ce97f
+2026-11-26 08:42:04 | INFO | FILE_OK | file=C:\CinemaData\bookings.sql | size=15 | run_id=a56ce97f
+2026-11-26 08:42:04 | INFO | FILE_OK | file=C:\CinemaData\movies.csv | size=14 | run_id=a56ce97f
+2026-11-26 08:42:04 | INFO | CHECK_COMPLETED | ok=2 | healed=0 | failed=0 | run_id=a56ce97f
+2026-11-26 08:47:04 | INFO | CHECK_STARTED | files=2 | run_id=418f3486
+2026-11-26 08:47:04 | INFO | FILE_OK | file=C:\CinemaData\bookings.sql | size=15 | run_id=418f3486
+2026-11-26 08:47:04 | INFO | FILE_OK | file=C:\CinemaData\movies.csv | size=14 | run_id=418f3486
+2026-11-26 08:47:04 | INFO | CHECK_COMPLETED | ok=2 | healed=0 | failed=0 | run_id=418f3486
