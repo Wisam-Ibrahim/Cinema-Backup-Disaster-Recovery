@@ -1,0 +1,67 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261126081835
+Username: WIN-MMHGOOM7J3D\wisam
+RunAs User: WIN-MMHGOOM7J3D\wisam
+Configuration Name: 
+Machine: WIN-MMHGOOM7J3D (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 2640
+PSVersion: 5.1.26100.7462
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7462
+BuildVersion: 10.0.26100.7462
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is logs\phase-8a-init.txt
+Config written: C:\CinemaRepo\config\monitored_files.json
+{
+    "check_interval_minutes":  5,
+    "max_recovery_attempts":  3,
+    "retry_delay_seconds":  10,
+    "verify_sha256":  true,
+    "log_path":  "logs\\self_healing.log",
+    "quarantine_path":  "quarantine",
+    "log_max_mb":  5,
+    "log_retention_days":  30,
+    "wbadmin_fallback":  {
+                             "enabled":  true,
+                             "backup_target":  "E:"
+                         },
+    "monitored_files":  [
+                            {
+                                "name":  "bookings",
+                                "target":  "C:\\CinemaData\\bookings.sql",
+                                "backup":  "backups\\bookings.sql",
+                                "expected_sha256":  "92620EDBEEE03E682BB42CF6EF0B70491CAC71E8116D52915DFD0B74F21DB6AC",
+                                "expected_size":  15
+                            },
+                            {
+                                "name":  "movies",
+                                "target":  "C:\\CinemaData\\movies.csv",
+                                "backup":  "backups\\movies.csv",
+                                "expected_sha256":  "1336D7FBD65FEB548DFE732BA92B4FB3DDABB5E9C9F7194621B74A78371DE506",
+                                "expected_size":  14
+                            }
+                        ]
+}
+
+
+    Directory: C:\CinemaRepo\backups
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        11/25/2026   5:41 PM             15 bookings.sql
+-a----        11/25/2026   5:41 PM             14 movies.csv
+2026-11-26 08:18:36 | INFO | CHECK_STARTED | files=2 | run_id=4e4a980a
+2026-11-26 08:18:36 | INFO | FILE_OK | file=C:\CinemaData\bookings.sql | size=15 | run_id=4e4a980a
+2026-11-26 08:18:36 | INFO | FILE_OK | file=C:\CinemaData\movies.csv | size=14 | run_id=4e4a980a
+2026-11-26 08:18:36 | INFO | CHECK_COMPLETED | ok=2 | healed=0 | failed=0 | run_id=4e4a980a
+**********************
+Windows PowerShell transcript end
+End time: 20261126081836
+**********************

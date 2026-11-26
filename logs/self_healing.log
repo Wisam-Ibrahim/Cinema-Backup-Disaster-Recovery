@@ -1,0 +1,4 @@
+﻿2026-11-26 08:18:36 | INFO | CHECK_STARTED | files=2 | run_id=4e4a980a
+2026-11-26 08:18:36 | INFO | FILE_OK | file=C:\CinemaData\bookings.sql | size=15 | run_id=4e4a980a
+2026-11-26 08:18:36 | INFO | FILE_OK | file=C:\CinemaData\movies.csv | size=14 | run_id=4e4a980a
+2026-11-26 08:18:36 | INFO | CHECK_COMPLETED | ok=2 | healed=0 | failed=0 | run_id=4e4a980a

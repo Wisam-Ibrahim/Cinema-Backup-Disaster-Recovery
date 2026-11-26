@@ -1,0 +1,30 @@
+{
+    "check_interval_minutes":  5,
+    "max_recovery_attempts":  3,
+    "retry_delay_seconds":  10,
+    "verify_sha256":  true,
+    "log_path":  "logs\\self_healing.log",
+    "quarantine_path":  "quarantine",
+    "log_max_mb":  5,
+    "log_retention_days":  30,
+    "wbadmin_fallback":  {
+                             "enabled":  true,
+                             "backup_target":  "E:"
+                         },
+    "monitored_files":  [
+                            {
+                                "name":  "bookings",
+                                "target":  "C:\\CinemaData\\bookings.sql",
+                                "backup":  "backups\\bookings.sql",
+                                "expected_sha256":  "92620EDBEEE03E682BB42CF6EF0B70491CAC71E8116D52915DFD0B74F21DB6AC",
+                                "expected_size":  15
+                            },
+                            {
+                                "name":  "movies",
+                                "target":  "C:\\CinemaData\\movies.csv",
+                                "backup":  "backups\\movies.csv",
+                                "expected_sha256":  "1336D7FBD65FEB548DFE732BA92B4FB3DDABB5E9C9F7194621B74A78371DE506",
+                                "expected_size":  14
+                            }
+                        ]
+}
