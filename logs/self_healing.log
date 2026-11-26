@@ -47,3 +47,10 @@
 2026-11-26 08:27:04 | INFO | FILE_OK | file=C:\CinemaData\bookings.sql | size=15 | run_id=3d35950e
 2026-11-26 08:27:04 | INFO | FILE_OK | file=C:\CinemaData\movies.csv | size=14 | run_id=3d35950e
 2026-11-26 08:27:04 | INFO | CHECK_COMPLETED | ok=2 | healed=0 | failed=0 | run_id=3d35950e
+2026-11-26 08:29:46 | INFO | CHECK_STARTED | files=2 | run_id=f3946f20
+2026-11-26 08:29:46 | WARNING | CHECKSUM_MISMATCH | file=C:\CinemaData\bookings.sql | expected=92620EDBEEE03E682BB42CF6EF0B70491CAC71E8116D52915DFD0B74F21DB6AC | actual=717FBB7440B84CDA4F682DA1F2300913F5DCC939FC53A84A2CCE2F8FCB113D3F | run_id=f3946f20
+2026-11-26 08:29:46 | INFO | QUARANTINED | file=C:\CinemaData\bookings.sql | copy=C:\CinemaRepo\quarantine\2026-11-26\bookings.sql_082946.bad | run_id=f3946f20
+2026-11-26 08:29:47 | INFO | RECOVERY_STARTED | file=bookings | source=backup | attempt=1 | run_id=f3946f20
+2026-11-26 08:29:47 | INFO | RECOVERY_SUCCESS | file=bookings | source=backup | attempt=1 | run_id=f3946f20
+2026-11-26 08:29:47 | INFO | FILE_OK | file=C:\CinemaData\movies.csv | size=14 | run_id=f3946f20
+2026-11-26 08:29:47 | INFO | CHECK_COMPLETED | ok=1 | healed=1 | failed=0 | run_id=f3946f20
